@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .main{
+      margin-top: 20px;
+      margin-left: 20px;
+      text-align: center;
+      display: grid;
+      height: 300px;
+      width: 500px;
+        border: 1px solid black
+      }
+      .container{
+          display:grid;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        grid-template-columns: 100px 100px;
+        align-items: center;        
+      }
+      h2{
+        margin-top: 20px;
+      }
+      button{
+        height: 50px;
+        grid-template-columns: 10px 10px;
+          cursor: pointer;
+          border-radius: 4px;
+      }
+      #result{
+        /* margin-left: 140px; */
+          display: flex;
+        border: 1px solid black;
+        align-items: center;
+      }
+      #one{
+        background-color: rgb(145, 145, 223);
+        border: none;
+        color: white;
+      }
+      #two{
+        background-color: rgb(224, 129, 129);
+        border: none;
+      }
+</style>
+<body>
+  <div class="main">
+  <h2>Your age in Days</h2>
+  <h4 id="result"></h4>
+  <div class="container">
+    <button id="one" onclick="ageindays()">Click me</button>
+    <button id="two" onclick="reset()">reset</button>
+  </div>
+  </div>
+  <script src="cleverp.js"></script>
+</body>
+</html>
